@@ -1,4 +1,4 @@
 // do the needful
-require('./lib/classes.js');
+const testLog = require('./lib/classes.js');
 testLog();
 
