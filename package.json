@@ -1,0 +1,25 @@
+{
+  "name": "profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digidoor/profile-generator.git"
+  },
+  "author": "digidoor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digidoor/profile-generator/issues"
+  },
+  "homepage": "https://github.com/digidoor/profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
