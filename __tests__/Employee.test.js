@@ -1,34 +1,34 @@
-//test stuff Employee
-//arrange
-//act
-//assert
-
 const { Employee } = require('../lib/classes');
 
 describe('Employee', () => {
   describe('Initialization', () => {
     // Positive test
-    it("should create an object with a 'name' property set to the 'name' argument passed to the constructor", () => {
+    it("should create an object with a 'name', 'id', and 'email' property set to those arguments passed to the constructor", () => {
       // Arrange
-      const text = 'Pick up milk';
+      const name = 'Josephus';
+	  const id = "3";
+	  const email = "example@email.com";
 
       // Act
-      const employee = new Employee(text, text, text);
+      const employee = new Employee(name, id, email);
 
       // Assert
-      expect(employee.name).toEqual(text);
+      expect(employee.getName()).toEqual(name);
+      expect(employee.getId()).toEqual(id);
+      expect(employee.getEmail()).toEqual(email);
     });
+  });
+	
+  describe('Return proper role', () => {
 
     // Exception test
     it("should return \"Employee\" when using the getRole() method", () => {
       // Arrange
-      const cb = () => new Employee();
-      const err = new Error(
-        "Expected parameter 'text' to be a non empty string"
-      );
+      const bob = new Employee();
+      response = bob.getRole();
 
       // Assert
-      expect(cb).toThrowError(err);
+      expect(response).toEqual("Employee");
     });
   });
 });
