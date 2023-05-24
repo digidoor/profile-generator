@@ -34,7 +34,7 @@ function generateHTML(data)
 <p>${data.managerId}</p>
 <p>${data.managerEmail}</p>
 <p>${data.managerOfficeNumber}</p>
-<p>${engyUnder(data.existsEngineer, engy)}</p>
+<p>${engyUnder(data.existsEngineer, data.engy)}</p>
 		
 `;
 }
