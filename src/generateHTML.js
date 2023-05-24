@@ -29,28 +29,11 @@ function screenShotSection( isScreen, screenName )
 ![screenshot](${screenName}?raw=true "demo")`
 }
 
-function generateHTML(data) {
-	return `# ${data.projectName}
-## Description
-${data.desc}
-
-[license info](#license)
-
-${screenShotSection( data.screenshot, data.screenfile )}
-## Installation
-To install dependencies, run the following:
-\`\`\`bash
-${data.install}
-\`\`\`
-## Usage
-${data.usage}
-## Questions or Comments?
-Simply open an issue in this repo.
-Find me at [${data.github}](https://github.com/${data.github}/).
-${renderLicenseSection(data.license)}
-
-${renderLicenseBadge(data.license)}
-`;
+function generateHTML(data)
+{
+	return "<h1> this is a test</h1>";
 }
 
 module.exports = generateHTML;
+
+//${data.desc}
