@@ -4,7 +4,7 @@ const { Employee, Manager, Engineer, Intern } = require('./lib/classes.js');
 // TODO: Include packages needed for this application
 const { writeFile } = require('fs').promises;
 const inquirer = require('inquirer');
-const generateHTML = require('./utils/generateHTML');
+const generateHTML = require('./src/generateHTML');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -31,8 +31,8 @@ function writeToFile(fileName, data)
 function init()
 {
 	inquirer.prompt(questions)
-		.then( responses => writeToFile("./dist/README.out", generateHTML(responses)))
-		.then( () => console.log("Successfully wrote ReadMe file") )
+		.then( responses => writeToFile("./dist/profiles.html", generateHTML(responses)))
+		.then( () => console.log("Successfully wrote HTML profile page.") )
 		.catch( err => console.error(err) );
 }
 
