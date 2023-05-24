@@ -21,18 +21,22 @@ This project is licensed under the ${license} license.`;
 	return "";
 }
 
-function screenShotSection( isScreen, screenName )
+function engyUnder( exists, engy )
 {
-	if(!isScreen)
+	if(!exists)
 		return "";
-	return `## Here's what it looks like:
-![screenshot](${screenName}?raw=true "demo")`
+	return `Engineer: ${engy}`;
 }
 
 function generateHTML(data)
 {
-	return `<h1> this is a test</h1>
-<p>${data.manager}</p>`;
+	return `<h1>Manager: ${data.manager}</h1>
+<p>${data.managerId}</p>
+<p>${data.managerEmail}</p>
+<p>${data.managerOfficeNumber}</p>
+<p>${engyUnder(data.existsEngineer, engy)}</p>
+		
+`;
 }
 
 module.exports = generateHTML;

@@ -10,14 +10,34 @@ const generateHTML = require('./src/generateHTML');
 const questions = [
 	{
 		type: 'input',
-		message: 'Manager?',
+		message: 'Manager\'s name?',
 		name: 'manager',
 	},
 	{
 		type: 'input',
-		message: 'Screenshot filename?',
-		name: 'screenfile',
-		when: function( responses ) { return responses.screenshot === true; },
+		message: 'Manger\'s employee ID?',
+		name: 'managerId',
+	},
+	{
+		type: 'input',
+		message: 'Manger\'s email?',
+		name: 'managerEmail',
+	},
+	{
+		type: 'input',
+		message: 'Manager\'s office number?',
+		name: 'managerOfficeNumber',
+	},
+	{
+		type: 'confirm',
+		message: 'Does this manager have an engineer under them?',
+		name: 'existsEngineer',
+	},
+	{
+		type: 'input',
+		message: 'What\'s the name of this engineer?',
+		name: 'engy',
+		when: function( responses ) { return responses.existsEngineer === true; },
 	},
 ];
 
