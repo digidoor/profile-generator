@@ -13,38 +13,6 @@ const questions = [
 		message: 'Manager?',
 		name: 'manager',
 	},
-//	{
-//		type: 'list',
-//		message: 'What license does it use?',
-//		choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
-//		name: 'license',
-//	},
-//	{
-//		type: 'input',
-//		message: 'Describe the project concept.',
-//		name: 'desc',
-//	},
-//	{
-//		type: 'input',
-//		message: 'How do you install the dependencies?',
-//		default: 'npm i',
-//		name: 'install',
-//	},
-//	{
-//		type: 'input',
-//		message: 'Describe the usage of the program.',
-//		name: 'usage',
-//	},
-//	{
-//		type: 'input',
-//		message: 'Who is the author? (What\'s your github handle?)',
-//		name: 'github',
-//	},
-//	{
-//		type: 'confirm',
-//		message: 'Would you like to include a screenshot in the README?',
-//		name: 'screenshot',
-//	},
 	{
 		type: 'input',
 		message: 'Screenshot filename?',

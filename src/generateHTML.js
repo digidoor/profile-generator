@@ -31,7 +31,8 @@ function screenShotSection( isScreen, screenName )
 
 function generateHTML(data)
 {
-	return "<h1> this is a test</h1>";
+	return `<h1> this is a test</h1>
+<p>${data.manager}</p>`;
 }
 
 module.exports = generateHTML;
