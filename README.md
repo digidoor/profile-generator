@@ -6,6 +6,7 @@ A command line utility to create HTML profile pages based on user input.
 
 ## Here's what it looks like:
 ![screenshot](profile-gen.png?raw=true "demo")
+https://drive.google.com/file/d/1s7rcK8E2nZ09yXo_L-n6VNTQnFN081TR/view
 ## Installation
 To install dependencies, run the following:
 ```bash
